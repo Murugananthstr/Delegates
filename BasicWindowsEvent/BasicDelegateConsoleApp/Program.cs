@@ -19,9 +19,14 @@ namespace BasicDelegateConsoleApp
             //d += d1;  - GetInvocationList of the Base Class MultiCastDelegate
             //      d(12345);
             //Dynamically you can decide which method to call only by passing the delegate as parameters along with the value;
-            DoWork(sumTheDigits, 12345);
-            DoWork(reverseTheDigits, 12345);
-            DoWork(reverseTheDigits, 53215);
+            //DoWork(sumTheDigits, 12345);
+            //DoWork(reverseTheDigits, 12345);
+            //DoWork(reverseTheDigits, 53215);
+
+            sumTheDigits += reverseTheDigits;  // One Single Point and Multiple Handler is handled differently that is power of Delegates.
+            DoWork(sumTheDigits, 642135); // One Single Point and Multiple Handler is handled differently that is power of Delegates.
+
+
             Console.ReadLine();
         }
 
